@@ -5,39 +5,97 @@
 
   /** Für Bon Vivant Family **/
   @font-face {
-      font-family: "Bon Vivant Family";
-      src: url("public/fonts/BonVivantSerifBold.ttf");
-      font-weight: normal;
-  }
+    font-family: "Klint Black";
+    src: url("public/fonts/Klint Black.otf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
 
-  /* Karla für Body */
-  body {
-      font-family: 'Karla', sans-serif;
-  }
+@font-face {
+    font-family: "Klint Bold";
+    src: url("public/fonts/Klint Bold.otf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Klint Italic";
+    src: url("public/fonts/Klint Italic.otf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Klint Light";
+    src: url("public/fonts/Klint Light.otf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Klint Medium";
+    src: url("public/fonts/Klint Medium.otf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Klint Regular";
+    src: url("public/fonts/Klint Regular.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
 
   nav, .mobile{
-    font-family: 'Rubik', sans-serif;
-    font-size: 12px !important;
-    font-weight: bold;
+    color: #d9d9d9;
+    line-height: 1;
+    font-family: "Klint Regular", sans-serif;
+    text-underline-offset: .375rem;
+  }
+
+  body{
+    font-family: "Klint Regular", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  h3{
+    font-family: "Klint Medium", sans-serif;
+    font-size: 18px;
+  }
+
+  
+  h4{
+    font-family: "Klint Medium", sans-serif;
+    font-size: 18px;
+  }
+
+  h1{
+    font-family: "Klint Regular", sans-serif;
     text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  h2{
+    font-family: "Klint Regular", sans-serif;
     text-transform: uppercase;
-    padding: 0 15px;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  button{
+    font-family: "Klint Bold", sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+
   }
 
   /* Rubik für Navigation */
-  nav, h3 {
-      font-family: 'Rubik', sans-serif;
-  }
-
-  /* Bon Vivant für Überschriften */
-  h1, h2, h4, h5, h6 {
-      font-family: 'Bon Vivant Family', serif !important;
-  }
-
-  /* Weitere Stile für Buttons und Texte */
-  btn{
-      font-family: 'Karla', sans-serif;
-  }
 
 
 @layer base {

@@ -1,66 +1,50 @@
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { CheckCircle } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative h-screen flex flex-col justify-center items-center xl:p-10">
-      {/* Container for the video */}
-      <div className="relative w-full h-full max-w-full overflow-hidden">
-        {/* Desktop Video */}
-        <video
-          className="w-full h-full object-cover ease-in-out hidden md:block"
-          autoPlay
-          muted
-          loop
-        >
-          <source
-            src="https://mgstaps.com/wp-content/uploads/2023/09/MGS_loop_A_no%20zoom%2003_low.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+    <section className="relative h-screen flex flex-col justify-center items-start xl:p-10">
+      {/* Hintergrundbild mit Responsive Support */}
+      <picture className="absolute inset-0 w-full h-full">
+        <source
+          media="(max-width: 767px)"
+          srcSet="https://caso-design.de/media/images/showcase/3511_JuiceFitPro_header_1400x1400px_responsive.jpg"
+        />
+        <source
+          media="(max-width: 1024px)"
+          srcSet="https://caso-design.de/media/images/showcase/3511_JuiceFitPro_header_960x500px_responsive_j44UqIi.jpg"
+        />
+        <img
+          className="w-full h-full object-cover"
+          src="https://caso-design.de/media/images/showcase/3511_JuiceFitPro_header_gruen_2000x450px.jpg"
+          alt="CASO Design Küchengeräte"
+        />
+      </picture>
 
-        {/* Mobile Video */}
-        <video
-          className="w-full h-full object-cover ease-in-out md:hidden"
-          autoPlay
-          muted
-          loop
-        >
-          <source
-            src="https://mgstaps.com/wp-content/uploads/2023/11/MGS%20mobile_loop_A_no%20zoom%2003.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/50" />
 
-        {/* Darker Overlay */}
-        <div className="absolute inset-0 bg-black/50" />
-      </div>
+      {/* Hero Content (links ausgerichtet) */}
+      <div className="absolute inset-0 flex flex-col justify-center items-start text-white z-10 text-left px-6 sm:px-12 lg:px-20">
+        <h3 className="text-white mb-2">
+        Design trifft Funktion
+        </h3>
 
-      {/* Hero Content (Centered Text) */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10">
-        <div className="max-w-7xl text-center px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light mb-6 uppercase">
-            Exklusive Armaturen für Küche & Bad
-          </h1>
+        <div className="w-24 h-[2px] bg-white mb-4" />
 
-          <p className="text-xl md:text-xl text-gray-200 mb-6">
-            Entdecken Sie die einzigartige Kombination aus italienischem Design und Schweizer Ingenieurkunst mit den MGS-Armaturen.<br />
-            Eleganz, Präzision und Innovation für Ihre luxuriöse Küche und Badgestaltung im Küchenstudio Bergheim.
-          </p>
+        <h1 className="">
+          Hochwertige Küchengeräte für wahre Genießer
+        </h1>
 
+        <div className="flex flex-col sm:flex-row gap-4 mt-6">
           <a href="/#beratung">
-            <Button className="bg-[#61756a] uppercase text-white px-8 py-8 mt-9">
-              Beratungstermin buchen
+            <Button className="bg-[#333] text-md uppercase hover:bg-[#333] text-white px-6">
+              Beratung vereinbaren
             </Button>
           </a>
         </div>
 
-        {/* Hero Text (MGLabs) */}
-        <div className="absolute bottom-8 right-16 text-white text-8xl font-bold opacity-20 uppercase tracking-widest">
-          <h2>MGLabs</h2>
-        </div>
+    
       </div>
     </section>
   );
