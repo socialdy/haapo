@@ -8,7 +8,7 @@ export const Hero = () => {
       <picture className="absolute inset-0 w-full h-full">
         <source
           media="(max-width: 767px)"
-          srcSet="public/images/bg-hero.jpg"
+          srcSet="/images/bg-hero.jpg"
         />
         <source
           media="(max-width: 1024px)"
@@ -16,7 +16,7 @@ export const Hero = () => {
         />
         <img
           className="w-full h-full object-cover"
-          src="public/images/bg-hero.jpg"
+          src="/images/bg-hero.jpg"
           alt="CASO Design Küchengeräte"
         />
       </picture>
