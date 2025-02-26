@@ -6,66 +6,53 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const products = [
   {
     id: 1,
-    name: "CASO Maitre 3500",
-    image: "/images/maitre_3500.jpg",
-    description: "Mobiles Doppelinduktionskochfeld, Testsieger.",
+    name: "Jet Air System",
+    image: "/images/jet-air-system.jpg",
+    description: "Revolutionäre Umlufttechnologie ohne Fettfilter – hygienisch, geruchsreduzierend und leistungsstark."
   },
   {
     id: 2,
-    name: "CASO Classico T2",
-    image: "/images/classico_t2.jpg",
-    description: "Toaster für 2 Scheiben.",
+    name: "CASO Ci AIR Induktionskochfeld",
+    image: "/images/ci_air.jpg",
+    description: "Einbau-Induktionskochfeld mit integriertem Dunstabzug und JET AIR Separation Technology für saubere Luft.",
   },
   {
     id: 3,
-    name: "CASO MCG 25 Ceramic Chef",
-    image: "/images/mcg_25.jpg",
-    description: "Mikrowelle + Heißluft + Grill.",
+    name: "Flächeninduktionskochfeld Ci",
+    image: "/images/ci_flaecheninduktion.jpg",
+    description: "Modernes Induktionskochfeld mit Touch-Bedienung, Slider-Steuerung und flexiblen Kochzonen.",
   },
   {
     id: 4,
-    name: "CASO AirFry & Steam 700",
-    image: "/images/airfry_steam_700.jpg",
-    description: "3 Garmethoden in einem Gerät – Dampfgaren, Heißluftfrittieren oder in Kombination.",
+    name: "CASO Selection E 25 MGS",
+    image: "/images/selection_e25_mgs.jpg",
+    description: "Einbaumikrowelle mit Heißluftfunktion – vollwertiger Ersatz für einen Backofen.",
   },
   {
     id: 5,
-    name: "CASO BaristaChef Inox",
-    image: "/images/baristachef_inox.jpg",
-    description: "Kaffeemühle mit Auffangbehälter und Siebträgerhaltung.",
+    name: "SteamMaster E 56",
+    image: "/images/steammaster_e56.jpg",
+    description: "Multifunktions-Dampfbackofen mit 3000 W für Backen, Braten, Dampfgaren und Kombifunktionen",
   },
   {
     id: 6,
-    name: "CASO Vakuumiergerät FastVac 500",
-    image: "/images/fastvac_500.jpg",
-    description: "Professionelles Edelstahl-Vakuumsystem zum Vakuumieren Ihrer Lebensmittel.",
+    name: "CASO Vakuumiersystem",
+    image: "/images/vakuumiersystem.jpg",
+    description: "Hochwertiges Vakuumiersystem mit doppelter Schweißnaht für längere Haltbarkeit von Lebensmitteln.",
   },
   {
     id: 7,
-    name: "CASO SV 400",
-    image: "/images/sv_400.jpg",
-    description: "Sous Vide Stick, Sieger Preis/Leistung.",
+    name: "CASO Sous Vide Garer",
+    image: "/images/sous_vide.jpg",
+    description: "Präziser Sous Vide Garer für perfekte Garergebnisse bei niedrigen Temperaturen.",
   },
   {
     id: 8,
-    name: "CASO WaffleUp",
-    image: "/images/waffleup.jpg",
-    description: "Design belgisches Waffeleisen.",
-  },
-  {
-    id: 9,
-    name: "CASO Juice Fit Pro",
-    image: "/images/juice_fit_pro.jpg",
-    description: "Design Slow Juicer, Gewinner Preis/Leistung.",
-  },
-  {
-    id: 10,
-    name: "CASO WineCase One Black",
-    image: "/images/winecase_one_black.jpg",
-    description: "Design Weinkühler für eine Flasche.",
-  },
+    name: "Zubehör für Umluftbetrieb",
+    image: "/images/zubehoer_umluft.jpg",
+    description: "Energie- und materialsparendes Umluftsystem, ideal für moderne Küchen und Energiesparhäuser.",
+  }
 ];
-
 
 
 
@@ -89,7 +76,7 @@ export const ProductSlider = () => {
   return (
     <section className="py-20 bg-white" id="produkte">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-center mb-12 uppercase">Produkte</h2>
+        <h2 className="text-center mb-12">Produkte</h2>
         <div className="relative">
           <div className="flex gap-4 md:gap-8">
             {products

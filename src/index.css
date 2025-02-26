@@ -47,7 +47,7 @@
 }
 
   nav, .mobile{
-    color: #d9d9d9;
+    color: #ffffff;
     line-height: 1;
     font-family: "Klint Regular", sans-serif;
     text-underline-offset: .375rem;
@@ -57,33 +57,36 @@
     font-family: "Klint Regular", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
-  }
-
-  h3{
-    font-family: "Klint Medium", sans-serif;
-    font-size: 18px;
-  }
-
-  
-  h4{
-    font-family: "Klint Medium", sans-serif;
-    font-size: 18px;
   }
 
   h1{
     font-family: "Klint Regular", sans-serif;
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 1.2;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.3;
   }
 
-  h2{
-    font-family: "Klint Regular", sans-serif;
-    text-transform: uppercase;
-    font-size: 26px;
-    line-height: 1.2;
-  }
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+}
+
+h4{
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+h3{
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+
+p {
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+}
 
   button{
     font-family: "Klint Bold", sans-serif;

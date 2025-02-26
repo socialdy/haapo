@@ -8,7 +8,7 @@ export const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <header className="fixed w-full top-0 z-50 bg-[#333] backdrop-blur-sm border-b border-[#333]">
+    <header className="fixed w-full top-0 z-50 bg-[#161616] backdrop-blur-">
       <div className="container mx-auto px-6 md:px-12">
         <nav className="flex items-center justify-between h-20">
           {/* Logo Section */}
@@ -50,9 +50,7 @@ export const Header = () => {
               Referenzen
             </a>
             <a href="/#beratung">
-            <Button className="bg-[white]/40 text-md uppercase hover:bg-[white]/40 text-white px-6">
               Jetzt Beratung anfordern
-            </Button>
             </a>
           </div>
 
@@ -60,7 +58,7 @@ export const Header = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-white  hover:text-white  focus:outline-none"
+              className="bg-[#161616]  hover:text-white  focus:outline-none"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +80,7 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden bg-[#333] text-gray-700 border-t border-gray-100 shadow-md mobile">
+          <div className="lg:hidden bg-[#161616] text-gray-700 border-t border-gray-100 shadow-md mobile">
             <div className="flex flex-col items-start gap-4 py-4 pl-6">
               <a
                 href="/#produkte"
@@ -106,9 +104,7 @@ export const Header = () => {
                 Referenzen
               </a>
               <a href="/#beratung">
-              <Button className="bg-[white]/40 text-md uppercase hover:bg-[white]/40 text-white px-6">
               Jetzt Beratung anfordern
-            </Button>
             </a>
             </div>
           </div>

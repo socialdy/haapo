@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#2c2c2e] text-[#e5e7eb] py-16">
+    <footer className="bg-[#161616] text-[#e5e7eb] py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
@@ -18,7 +18,7 @@ export const Footer = () => {
             </p>
           </div>
           <div>
-            <h4 className="mb-4 uppercase">Quicklinks</h4>
+            <h4 className="mb-4">Quicklinks</h4>
             <ul className="space-y-3">
               <li>
                 <a href="https://kuechenstudio-bergheim.at/kuechen" className="text-[#e5e7eb] hover:text-[#e5e7eb] transition-colors">
@@ -43,7 +43,7 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="mb-4 uppercase">Kontakt</h4>
+            <h4 className="mb-4">Kontakt</h4>
             <ul className="space-y-3 text-[#e5e7eb]">
               <li>Lamprechtshausener Bundesstraße 1</li>
               <li>5101 Bergheim</li>
@@ -61,7 +61,7 @@ export const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="mb-4 uppercase">Öffnungszeiten</h4>
+            <h4 className="mb-4">Öffnungszeiten</h4>
             <ul className="space-y-3 text-[#e5e7eb]">
               <li>Mo – Fr: 10:00 – 17:00 Uhr</li>
               <li>Sa – So: Geschlossen</li>
