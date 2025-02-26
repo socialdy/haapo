@@ -12,7 +12,7 @@ export const Hero = () => {
         />
         <source
           media="(max-width: 1024px)"
-          srcSet="public/images/bg-hero.jpg"
+          srcSet="/images/bg-hero.jpg"
         />
         <img
           className="w-full h-full object-cover"
