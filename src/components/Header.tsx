@@ -81,7 +81,7 @@ export const Header = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white text-gray-700 border-t border-gray-100 shadow-md mobile">
-            <div className="flex flex-col items-start gap-4 py-4 pl-6">
+            <div className="flex flex-col items-start gap-4 py-4 pl-6 mb-6">
               <a
                 href="/#produkte"
                 className="transition-colors text-black text-[18px] hover:underline hover:text-black focus:outline-none focus:underline focus:text-black"

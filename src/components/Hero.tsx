@@ -16,7 +16,7 @@ export const Hero = () => {
         />
         <img
           className="w-full h-full object-cover"
-          src="/images/bg_hero.webp"
+          src="/images/bg-hero.jpg"
           alt="Haapo Polstermöbel"
         />
       </picture>
