@@ -2,39 +2,36 @@ import { Check } from "lucide-react";
 
 export const AboutSection = () => {
   const benefits = [
-    "Innovative Küchentechnik mit durchdachten Funktionen und ästhetischem Design.",
-    "Über 20 Jahre Erfahrung in der Entwicklung hochwertiger Haushaltsgeräte.",
-    "Breites Sortiment von Induktionskochfeldern bis hin zu Weinkühlschränken.",
-    "Hohe Qualitätsstandards, regelmäßig ausgezeichnet von Testmagazinen.",
-    "Marktführend in den Bereichen Induktion, Vakuumiersysteme und Weintemperierung.",
+    "Handwerklich hochwertige Funktions-Polstermöbel seit 1910.",
+    "Traditionelle Tiroler Werte und regionale Materialien.",
+    "Zeitloser und moderner Stil, entwickelt und hergestellt von hoch qualifizierten Mitarbeitern.",
+    "Anfertigung von Sondergrößen, Sondermaßen und Sondermodellen.",
   ];
 
   return (
-    <section className="py-20">
+    <section className="pb-20 bg-white" id="ueber-casodesign">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Removed iframe */}
           <div>
-            <iframe
-              width="100%"
-              height="400"
-              src="https://www.youtube.com/embed/WAjvys_XDTU"
-              title="CASO Design Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          {/* Placeholder for potential image or other content */}
+          <img 
+            src="/images/der_blick_von_oben.webp" 
+            alt="Der Blick von Oben" 
+            className="h-auto w-full max-w-md mx-auto"
+          />
           </div>
           <div className="animate-fade-in">
-            <h2 className="mb-4 ">Warum CASO Design wählen?</h2>
-            <p className=" mb-8">
-              CASO Design steht für intelligente Küchengeräte, die das Kocherlebnis durch innovative Technik und modernes Design revolutionieren.
+            <h2 className="mb-4 text-[32px] font-signika font-light text-black leading-normal no-underline tracking-normal">Warum Haapo wählen?</h2>
+            <p className=" mb-12 text-black">
+              Haapo fertigt seit 1910 handwerklich hochwertige Funktions-Polstermöbel. Das Unternehmen verschreibt sich traditioneller Tiroler Werte und produziert Möbel seit jeher aus möglichst regionalen Materialien. Einzelmöbel und Wohnlandschaften im zeitlosen und modernen Stil werden von hoch qualifizierten Mitarbeitern entwickelt und hergestellt. Die Anfertigung von Sondergrößen, Sondermaßen und Sondermodellen zeichnet den Betrieb neben der umfangreichen und hochwertigen Auswahl an Funktionsmöglichkeiten aus.
             </p>
 
             <ul className="space-y-4">
               {benefits.map((benefit, index) => (
                 <li key={index} className="flex items-center gap-3">
-                  <Check className="text-[#2c2c2e]" />
-                  <span className="text-[#2c2c2e]">{benefit}</span>
+                  <Check className="text-red-600" />
+                  <span className="text-black">{benefit}</span>
                 </li>
               ))}
             </ul>

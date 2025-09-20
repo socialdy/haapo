@@ -10,34 +10,40 @@ export const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Alexander Müller",
-      role: "Selbstständiger Koch",
-      quote: "Das Jet Air System hat meine Küche revolutioniert. Die Umlufttechnologie funktioniert einwandfrei, und die Luft bleibt immer frisch, selbst nach intensiven Kochsessions. Ein Muss für jeden ambitionierten Koch!"
+      name: "Anna Gruber",
+      role: "Hotelierin, Tirol",
+      quote: "Die Viola Sessel in unserer Lobby sind der Hammer! Nicht nur mega bequem, sondern sehen auch noch top aus und passen perfekt zum alpinen Stil. Man merkt einfach die Handwerkskunst. Top!"
     },
     {
       id: 2,
-      name: "Monika Weber",
-      role: "Kochbuchautorin",
-      quote: "Das CASO Ci AIR Induktionskochfeld hat mich durch seine Technologie begeistert. Der integrierte Dunstabzug sorgt dafür, dass ich in der Küche nicht von Gerüchen überflutet werde, während ich gleichzeitig präzise kochen kann."
+      name: "Maximilian Koch",
+      role: "Innenarchitekt, Salzburg",
+      quote: "Für mein letztes Projekt brauchte ich spezielle Sitzgelegenheiten, und der Garmisch-Stuhl von Haapo war die beste Wahl. Die können die Stühle genau anpassen und die Materialien sind super hochwertig. Meine Kunden sind total happy damit!"
     },
     {
       id: 3,
-      name: "Johannes Richter",
-      role: "Vielbeschäftigter Berufspendler",
-      quote: "Mit dem Flächeninduktionskochfeld Ci spare ich enorm viel Zeit. Die flexiblen Zonen machen das Kochen so viel einfacher, und die Touch-Bedienung reagiert perfekt – schnell und einfach."
+      name: "Lena Schmidt",
+      role: "Privatkundin, München",
+      quote: "Unsere Apennin-Wohnessecke ist jetzt das Herzstück bei uns zu Hause. Die Beratung war erste Sahne, und das Endergebnis ist noch besser, als wir dachten. Ein richtiges Kunstwerk, das super bequem und stylisch ist."
     },
     {
       id: 4,
-      name: "Sophie König",
-      role: "Kaffeeliebhaberin und Hobbybäckerin",
-      quote: "Der CASO Selection E 25 MGS ist für mich ein absoluter Gamechanger. Durch die Heißluftfunktion kann ich jetzt sowohl backen als auch grillen, was mir bei der Zubereitung von Gerichten enorm viel Zeit spart."
+      name: "Thomas Berger",
+      role: "Restaurantbesitzer, Wien",
+      quote: "Das Mailand-Sofa hat unseren Barbereich total aufgewertet. Das italienische Design und der Wahnsinns-Sitzkomfort machen es zu einem echten Highlight für unsere Gäste. Wir sind echt beeindruckt, wie robust und schick es ist."
+    },
+    {
+      id: 5,
+      name: "Carina Fischer",
+      role: "Familienmutter, Kitzbühel",
+      quote: "Unser Luis-Schlafsofa ist einfach genial – super praktisch und sieht dabei auch noch toll aus. Es ist nicht nur ein gemütlicher Schlafplatz für unsere Besucher, sondern auch tagsüber ein stylisches Möbelstück, das perfekt ins Wohnzimmer passt. Die Kohle war hier super investiert!"
     }
   ];
 
   return (
-    <section className="py-20 bg-[#161616] text-white" id="referenzen">
+    <section className="pb-20 bg-white text-black" id="referenzen">
       <div className="container max-w-6xl mx-auto px-4">
-        <h2 className="text-center mb-12">Referenzen</h2>
+        <h2 className="text-center mb-12 text-[32px] font-signika font-light text-black leading-normal no-underline tracking-normal">Referenzen</h2>
         <Carousel
           opts={{
             align: "start",
@@ -51,7 +57,7 @@ export const Testimonials = () => {
                 key={testimonial.id}
                 className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3"
               >
-                <div className="bg-white/10 p-8 h-full animate-fade-in">
+                <div className="bg-[rgb(220_38_38)] p-8 h-full animate-fade-in text-white">
                   <div className="flex flex-col h-full justify-between">
                     <p className="text-lg mb-8 italic">"{testimonial.quote}"</p>
                     <div>
@@ -63,8 +69,8 @@ export const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -left-12 z-10 hover:bg-white/20 text-black" />
-          <CarouselNext className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -right-12 z-10 hover:bg-white/20 text-black" />
+          <CarouselPrevious className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -left-12 z-10 bg-white border border-[rgb(220_38_38)] text-[rgb(220_38_38)] hover:bg-[rgb(220_38_38)] hover:text-white" />
+          <CarouselNext className="hidden lg:flex absolute top-1/2 transform -translate-y-1/2 -right-12 z-10 bg-white border border-[rgb(220_38_38)] text-[rgb(220_38_38)] hover:bg-[rgb(220_38_38)] hover:text-white" />
         </Carousel>
       </div>
     </section>

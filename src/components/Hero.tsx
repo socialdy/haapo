@@ -16,8 +16,8 @@ export const Hero = () => {
         />
         <img
           className="w-full h-full object-cover"
-          src="/images/bg-hero.jpg"
-          alt="CASO Design Küchengeräte"
+          src="/images/bg_hero.webp"
+          alt="Haapo Polstermöbel"
         />
       </picture>
 
@@ -25,24 +25,14 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-black/50" />
 
       {/* Hero Content (links ausgerichtet) */}
-      <div className="absolute inset-0 flex flex-col justify-center items-start text-white z-10 text-left px-6 sm:px-12 lg:px-20">
-        <h3 className="text-white mb-2">Innovative Küchentechnologie</h3>
-        <div className="w-24 h-[2px] bg-white mb-4" />
-        <h1 className="">Das neue JET AIR System</h1>
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-white z-10 text-center px-6 sm:px-12 lg:px-20">
+        <h1 className="text-4xl lg:text-6xl">Haapo - Maßgeschneiderte Polstermöbel aus den Alpen</h1>
         <p className="mt-4 max-w-2xl">
-          Hygienischer, einfacher und nachhaltiger: Das neue CASO Design JET AIR System setzt neue Maßstäbe im Bereich der
-          Einbaukochfelder. Es benötigt keine regelmäßigen Filterwechsel, ist platzsparend einbaubar und lässt sich komplett hygienisch reinigen.
+          Haapo steht seit 1910 für handgefertigte Polstermöbel aus den Alpen. Wir kombinieren traditionelle Tiroler Werte mit modernem Design, verwenden regionale Materialien und bieten individuelle Lösungen. Besuchen Sie uns bei Küchenstudio Bergheim und erleben Sie unsere Qualität.
         </p>
-        <ul className="mt-4 list-disc pl-6 max-w-2xl">
-          <li>100 % hygienisch</li>
-          <li>Bis zu 98 % geruchsgereinigte Luft</li>
-          <li>Energieeffizient und wartungsarm</li>
-        </ul>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
-          <a href="/#beratung">
-            <Button className="bg-[#161616] text-md uppercase hover:bg-[#333] text-white px-6">
-              Beratungsgespräch vereinbaren
-            </Button>
+          <a href="/#produkte" className="bg-black text-white text-md px-12 py-3 hover:bg-[rgba(225,66,67,1)] focus:outline-none focus:ring-0 focus:ring-offset-0">
+              Mehr erfahren &gt;
           </a>
         </div>
       </div>

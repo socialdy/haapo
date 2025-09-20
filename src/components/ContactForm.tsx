@@ -23,7 +23,7 @@ export const ContactForm = () => {
     <section className="py-20 bg-gray-50" id="beratung">
       <div className="container max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
-        <h2 className="mb-2">Buchen Sie jetzt Ihren Termin!</h2>
+        <h2 className="mb-2 text-[32px] font-signika font-light text-black leading-normal no-underline tracking-normal">Buchen Sie jetzt Ihren Termin!</h2>
           <p className="mb-6">
             Lassen Sie uns Ihre Traumküche planen! Füllen Sie das Formular aus und buchen Sie einen Termin, der Ihnen passt.
           </p>

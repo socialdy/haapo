@@ -6,51 +6,73 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const products = [
   {
     id: 1,
-    name: "Jet Air System",
-    image: "/images/jet-air-system.jpg",
-    description: "Revolutionäre Umlufttechnologie ohne Fettfilter – hygienisch, geruchsreduzierend und leistungsstark."
+    name: "Viola Sessel",
+    image: "/images/viola.webp",
+    description: "Vereint zeitgemäßes Design mit erstklassiger Handwerkskunst und traditionellen Materialien wie Eiche, Nuss, Wolle und Loden. Maße: B70 x H65 x T72 x SH40 cm. Kollektion: viola",
+    designer: "Mathias Künzler"
   },
   {
     id: 2,
-    name: "CASO Ci AIR Induktionskochfeld",
-    image: "/images/ci_air.jpg",
-    description: "Einbau-Induktionskochfeld mit integriertem Dunstabzug und JET AIR Separation Technology für saubere Luft.",
+    name: "Garmisch-Stuhl",
+    image: "/images/garmisch.webp",
+    description: "Kompakte Sesselserie mit und ohne Armlehnen, ideal für Objekt- und private Essbereiche. Maße: B49 x H79 x T57 x SH46 cm.",
+    designer: "<b>Haapo</b>"
   },
   {
     id: 3,
-    name: "Flächeninduktionskochfeld Ci",
-    image: "/images/ci_flaecheninduktion.jpg",
-    description: "Modernes Induktionskochfeld mit Touch-Bedienung, Slider-Steuerung und flexiblen Kochzonen.",
+    name: "Malaun-Sessel",
+    image: "/images/malaun.webp",
+    description: "Malaun verbindet Tiroler Handwerkstradition mit alpenländischer Formensprache. Komfortable Polsterung in Wolle, Loden oder Leinen, umrahmt von einem filigranen Eichenholzgestell. Maße: B90 x H84 x T56 x SH43 cm.",
+    designer: "Gabriela Raible"
   },
   {
     id: 4,
-    name: "CASO Selection E 25 MGS",
-    image: "/images/selection_e25_mgs.jpg",
-    description: "Einbaumikrowelle mit Heißluftfunktion – vollwertiger Ersatz für einen Backofen.",
+    name: "Apennin-Wohnessecke",
+    image: "/images/apennin.webp",
+    description: "Zentimetergenau planbare Wohnessecke in verschiedenen Varianten mit glatter oder gesteppter Polsterung und diversen Fußoptionen (Eiche, Buche oder Metallkufen). Maße: B170 x 230 x H86 x T70 x SH49 cm.",
+    designer: "arge2"
   },
   {
     id: 5,
-    name: "SteamMaster E 56",
-    image: "/images/steammaster_e56.jpg",
-    description: "Multifunktions-Dampfbackofen mit 3000 W für Backen, Braten, Dampfgaren und Kombifunktionen",
+    name: "Mailand-Sofa",
+    image: "/images/mailand.webp",
+    description: "Dem Trend zu weicherem Sitzen und Relaxen begegnet <b>Haapo</b> mit daniele. Italienisches Flair, kubische aber dennoch weiche Formen und hervorragender legerer Sitzkomfort vereint mit Maßanfertigung ergeben das perfekte Polstermöbel. Italienische Stoffe geben daniele den typisch mediterranen Style. Maße: B200 x H78/88 x T84 x SH44 cm.",
+    designer: "Haapo"
   },
   {
     id: 6,
-    name: "CASO Vakuumiersystem",
-    image: "/images/vakuumiersystem.jpg",
-    description: "Hochwertiges Vakuumiersystem mit doppelter Schweißnaht für längere Haltbarkeit von Lebensmitteln.",
+    name: "Luis-Schlafsofa",
+    image: "/images/luis.webp",
+    description: "Den Sitz nach vorne ziehen, den Rücken runterklappen und aus einem ansprechenden Sofa wird ein Querschläfer-Schlafsofa. Maße: B212/222 x H85/90 x T90 x SH44 cm.",
+    designer: "Haapo"
   },
   {
     id: 7,
-    name: "CASO Sous Vide Garer",
-    image: "/images/sous_vide.jpg",
-    description: "Präziser Sous Vide Garer für perfekte Garergebnisse bei niedrigen Temperaturen.",
+    name: "Relax-Liege",
+    image: "/images/relax.webp",
+    description: "Das Topmodell der <b>Haapo</b>-Liegen-Kollektion. Optisch anspruchsvoll, hochwertigste Materialien, flexible Maße und viele Varianten bereichert diese Liege viele Wohn-, Wellness- und Ruhebereiche. Maße: B92 x H85 x T190 x SH44 cm.",
+    designer: "Haapo"
   },
   {
     id: 8,
-    name: "Zubehör für Umluftbetrieb",
-    image: "/images/zubehoer_umluft.jpg",
-    description: "Energie- und materialsparendes Umluftsystem, ideal für moderne Küchen und Energiesparhäuser.",
+    name: "Haapo-Naturbett",
+    image: "/images/naturbett.webp",
+    description: "Natürlich und formschön Schlafen – die Betteneuheit aus komplett natürlichen Materialien: Naturlatex, Kokosplatten, reine Schurwolle und die Sichtholzteile geölt oder gewachst. Maße: B80/90/100/160/180/200 x H140 x L200.",
+    designer: "Haapo"
+  },
+  {
+    id: 9,
+    name: "Apennin-Tisch",
+    image: "/images/apennin_tisch.webp",
+    description: "Der apennin Tisch ist Teil der apennin Wohnessecke. Erhältlich mit massiven Holzfüßen (Eiche, Buche) oder modernen schwarz lackierten Metallkufen. Tischplatte in Standardgrößen: 90, 140, 160, 180, 200.",
+    designer: "arge2"
+  },
+  {
+    id: 10,
+    name: "Malaun-Tisch",
+    image: "/images/malaun_tisch.webp",
+    description: "Details Maße: D 45/55/80 x H 55/35/35 cm Kollektion: malaun",
+    designer: "Gabriela Raible"
   }
 ];
 
@@ -74,9 +96,9 @@ export const ProductSlider = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="produkte">
+    <section className="py-20 bg-[rgba(241,241,241,1)]" id="produkte">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-center mb-12">Produkte</h2>
+        <h2 className="text-center mb-12 text-[32px] font-signika font-light text-black leading-normal no-underline tracking-normal">Produkte</h2>
         <div className="relative">
           <div className="flex gap-4 md:gap-8">
             {products
@@ -87,11 +109,12 @@ export const ProductSlider = () => {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className=""
+                      className="mx-auto block object-contain h-40 w-full"
                     />
                     <div className="p-6 md:p-8 text-center">
                       <h3 className="mb-2">{product.name}</h3>
-                      <p className="mb-4">{product.description}</p>
+                      {/* {product.designer && <p className="text-sm text-gray-500 mb-2">by {product.designer}</p>} */}
+                      <p className="mb-4 text-lg">{product.description}</p>
                     </div>
                   </div>
                 </div>

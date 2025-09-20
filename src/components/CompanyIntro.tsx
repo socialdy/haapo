@@ -1,20 +1,20 @@
 export const CompanyIntro = () => {
   return (
-    <section className="py-20 bg-[#161616]" id="ueber-casodesign">
+    <section className="py-20 bg-white" id="ueber-casodesign">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center">
 
           <img 
-            src="/images/caso.svg" 
-            alt="CASO Design Logo" 
+            src="/images/haapo.webp" 
+            alt="Haapo Logo" 
             className="h-16 w-auto"
           />
           
         </div>
 
         <div className="mt-6 text-center">
-          <p className="text-[#d9d9d9] leading-relaxed mb-6">
-            CASO Design steht für innovative Küchentechnik, die starke Funktionen, ästhetische Formen und durchdachte Ideen vereint. Seit 2003 entwickelt und vertreibt das Familienunternehmen aus dem Sauerland mobile Küchengeräte, die Design, Funktionalität und intuitive Bedienung in Einklang bringen. Ob Induktionskochfelder, Vakuumiersysteme oder Weintemperierer – CASO Design bietet hochwertige Lösungen für moderne Küchen. Mit mehr als 200 Produkten hat sich CASO Design als eine der führenden Marken für smarte Küchentechnik etabliert und exportiert heute in über 30 Länder weltweit.
+          <p className="text-black leading-relaxed mb-6">
+            Haapo fertigt seit 1910 handwerklich hochwertige Funktions-Polstermöbel. Das Unternehmen verschreibt sich traditioneller Tiroler Werte und produziert Möbel seit jeher aus möglichst regionalen Materialien. Einzelmöbel und Wohnlandschaften im zeitlosen und modernen Stil werden von hoch qualifizierten Mitarbeitern entwickelt und hergestellt. Die Anfertigung von Sondergrößen, Sondermaßen und Sondermodellen zeichnet den Betrieb neben der umfangreichen und hochwertigen Auswahl an Funktionsmöglichkeiten aus.
           </p>
         </div>
       </div>
