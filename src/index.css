@@ -156,6 +156,10 @@ h3{
     font-family: Signika, 'Signika Fallback', sans-serif;
   }
 
+  p b {
+    font-weight: bold;
+  }
+
   h2 span {
     display: unset;
   }

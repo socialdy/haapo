@@ -114,7 +114,7 @@ export const ProductSlider = () => {
                     <div className="p-6 md:p-8 text-center">
                       <h3 className="mb-2">{product.name}</h3>
                       {/* {product.designer && <p className="text-sm text-gray-500 mb-2">by {product.designer}</p>} */}
-                      <p className="mb-4 text-lg">{product.description}</p>
+                      <p className="mb-4 text-lg" dangerouslySetInnerHTML={{ __html: product.description }}></p>
                     </div>
                   </div>
                 </div>
